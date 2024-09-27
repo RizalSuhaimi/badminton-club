@@ -1,0 +1,346 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 6.5rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1140px) {
+    .container {
+        padding-top: 5.5rem;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.875rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(0, 34, 78);
+    display: flex;
+    z-index: 100;
+}
+
+a {
+    color: white;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1.landscape {
+    font-family: "Rowdies";
+    color: aquamarine;
+}
+
+header h1.portrait {
+    display: none;
+}
+
+header nav ul {
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header li {
+    padding-left: 2rem;
+}
+
+a img {
+    height: 2rem;
+    width: 2rem;
+}
+
+@media only screen and (max-width: 1140px) {
+    header {
+        height: 4rem;
+    }
+
+    header h1.portrait {
+        font-family: "Rowdies";
+        color: aquamarine;
+        display: inline;
+    }
+    
+    header h1.landscape {
+        display: none;
+    }
+
+    header nav ul {
+        width: 75%;
+    }
+}
+
+
+/* banner */
+.banner {
+    width: 67.25rem;
+    height: 9.375rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 1140px) {
+    .banner {
+        width: 32.5rem;
+
+    }
+
+    .banner img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+}
+
+/* hero section */
+#hero {
+    background-image: url(../images/hero-pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 37.5rem;
+    margin: 1.5rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.hook {
+    width: 30%;
+    background-color: rgb(0, 34, 78);
+    padding: 1.5rem;
+    margin-left: 10rem;
+    border-radius: 1rem;
+}
+
+.hook h1 {
+    text-transform: uppercase;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto 1rem;
+    color: white;
+    background-color: rgb(43, 55, 105);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    
+}
+
+.hook h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.hook h5 a {
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(216, 104, 0);
+    border-radius: 0.5em;
+    width: 10rem;
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .hook h1 {
+        font-size: 1.875rem;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    #hero {
+        justify-content: center;
+    }
+
+    .hook {
+        margin: 0 auto;
+        width: 85%;
+        position: relative;
+        bottom: 11rem;
+    }
+}
+
+
+/* Players section */
+#players-container {
+    background-color: rgb(22, 22, 22);
+    padding: 2.5rem 0;
+    margin: 1.5rem auto;
+}
+
+#players-container h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#players-container .panels {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player {
+    width: 20rem;
+    margin: 1rem;
+}
+
+.player .img-container {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.player .img-container img {
+    display: block;
+    width: auto;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.player li {
+    color: white;
+}
+
+@media only screen and (max-width: 1440px) {
+    #players-container .panels {
+        width: 46.875rem;
+        margin: 0 auto;
+    }
+}
+
+
+/* reviews section */
+#reviews-container {
+    margin: 1.5rem auto;
+}
+
+#reviews-container .panels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem auto;
+}
+
+.panels .person {
+    width: 31.25rem;
+    background-color: rgb(43, 55, 105);
+    padding: 1rem 1.25rem;
+    margin: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.person h3 {
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.person p {
+    color: white;
+    text-align: justify;
+    font-size: 1.375rem;
+}
+
+@media only screen and (max-width: 1140px) {
+    .panels .person {
+        width: 25rem;
+    }
+}
+
+
+/* Gallery section */
+#gallery-container {
+    background-color: rgb(75, 75, 75);
+    padding: 1rem 0;
+}
+
+#gallery-container h2 {
+    color: white;
+    margin: 1rem auto;
+}
+
+#gallery-container .panels {
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center;
+}
+
+#gallery-container .img-container {
+    width: 42rem;
+    aspect-ratio: 42 / 25;
+    overflow: hidden;
+    margin: 0.5rem;
+}
+
+#gallery-container img{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1500px) {
+    #gallery-container .img-container {
+        width: 53.125rem;
+    }
+}
